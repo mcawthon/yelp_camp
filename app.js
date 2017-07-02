@@ -18,6 +18,8 @@ var commentRoutes    = require("./routes/comments"),
 
 // seedDB();
 
+app.locals.moment = require("moment");
+
 //Passport config
 app.use(require("express-session")({
     secret: "secret",
