@@ -25,7 +25,8 @@ app.use(require("express-session")({
     saveUninitialized: false
 }));
 
-mongoose.connect("mongodb://localhost/yelp_camp_v3");
+// mongoose.connect("mongodb://localhost/yelp_camp_v3");
+mongoose.connect("mongodb://mike:citizen@ds035846.mlab.com:35846/yelp_camp_v3");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
